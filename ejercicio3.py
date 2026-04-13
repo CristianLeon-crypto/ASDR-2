@@ -127,7 +127,7 @@ for nt in no_terminales:
             inter = conjs[i] & conjs[j]
             if inter:
                 es_ll1 = False
-                print(f"   ❌ NO es LL(1): '{nt}' tiene conflicto en {sorted(inter)}")
+                print(f" NO es LL(1): '{nt}' tiene conflicto en {sorted(inter)}")
 if es_ll1:
     print("   ✅ SÍ es LL(1)")
 
@@ -222,4 +222,4 @@ if len(sys.argv) > 1:
             print(f"\n-- Cadena: {' '.join(toks)}")
             print(f"   {estado}")
 else:
-    print("\n⚠️  Uso: python ejercicio3.py entrada.txt")
+    print("\n Uso: python ejercicio3.py entrada.txt")
